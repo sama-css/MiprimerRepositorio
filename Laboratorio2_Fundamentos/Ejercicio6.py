@@ -1,0 +1,13 @@
+def transformar_texto(texto, numero):
+    if numero == 1:
+        return texto.upper()
+    elif numero == 2:
+        return texto.lower()
+    elif numero == 3:
+        return texto.capitalize()
+
+
+def transformar_y_contar(texto, numero):
+    texto_transformado = transformar_texto(texto, numero)
+    cantidad = len(texto_transformado)
+    return texto_transformado, cantidad
